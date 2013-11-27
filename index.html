@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><!--HTML5 doctype-->
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="Pragma" content="no-cache">
+<script type="text/javascript" charset="utf-8" src="intelxdk.js"></script>
+<script type="text/javascript" language="javascript">
+    // This event handler is fired once the intel libraries are ready
+    function onDeviceReady() {
+        //hide splash screen now that our app is ready to run
+        intel.xdk.device.hideSplashScreen();
+        setTimeout(function () {
+            $.ui.launch();
+        }, 50);
+    }
+    //initial event handler to detect when intel is ready to roll
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+</script>
+<script src="js/appframework.ui.min.js"></script>
+<script>
+    $.ui.autoLaunch = false;
+    $.ui.useOSThemes = true; //Change this to false to force a device theme
+    $.ui.blockPageScroll();
+    $(document).ready(function () {
+        if ($.ui.useOSThemes && !$.os.ios && $("#afui").get(0).className !== "ios")
+            $("#afui").removeClass("ios");
+    });
+</script>
+<link href="css/icons.css" rel="stylesheet" type="text/css">
+<link href="css/af.ui.css" rel="stylesheet" type="text/css">
+</head>
+
+<div id="afui" class="ios">
+    <div id="header"></div>
+    <div id="content" style="">
+        <div class="panel" title="Home" id="home" selected="selected" style="" data-appbuilder-object="page"
+        data-header="header_0">
+
+
+            <div class="grid" data-appbuilder-object="grid3" style="z-index: 0;">
+
+
+
+            </div>
+            <div class="container" style="width: 100%; height: 100%; position: relative; z-index: 0;"
+            data-appbuilder-object="container">
+                <img src="images/enlightenment-154910.svg" style="width: 100%; height: 80%;" alt="Title"
+                data-appbuilder-object="image" class="" title="Yoga App">
+                <div class="text_item" data-appbuilder-object="text" style="text-align: center;">Welcome!</div>
+            </div>
+        </div>
+        <div class="panel" title="Position 1" id="page_1" data-appbuilder-object="page"
+        data-footer="footer_1" data-header="header_0" style="">
+
+            <div class="container" style="width: 100%; height: 100%;" data-appbuilder-object="container">
+                <img src="images/figure-37266.svg" style="width: 100%; height: 80%;" alt="Title"
+                data-appbuilder-object="image" class="" title="">
+                <div class="text_item" data-appbuilder-object="text" style="text-align: center;">Position 1:
+                    <br>Reach down and touch your toes.</div>
+            </div>
+        </div>
+        <div class="panel" title="Position 2" id="page_2" data-appbuilder-object="page"
+        style="" data-footer="footer_2" data-header="header_0">
+
+            <div class="container" style="width: 100%; height: 100%;" data-appbuilder-object="container">
+                <img src="images/figure-37268.svg" style="width: 100%; height: 80%;" alt="Title"
+                data-appbuilder-object="image" class="" title="">
+                <div class="text_item" data-appbuilder-object="text" style="text-align: center;">Position 2:
+                    <br>Lay down face first and reach with your hands.</div>
+            </div>
+        </div>
+        <div class="panel" title="Position 3" data-footer="footer_3" id="page_3" data-appbuilder-object="page"
+        style="" data-header="header_0">
+
+            <div class="container" style="width: 100%; height: 100%; position: relative; z-index: 0;"
+            data-appbuilder-object="container">
+                <img src="images/man-37262.svg" style="width: 100%; height: 80%;" alt="Title" data-appbuilder-object="image"
+                class="" title="">
+                <div class="text_item" data-appbuilder-object="text" style="text-align: center;">Position 3:
+                    <br>Lye on your back and use your arms to help arch your back.</div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="panel" title="About" id="page_10" data-appbuilder-object="page" style=""
+        data-header="header_0">
+
+
+            <div class="container" style="width: 100%; height: 100%;" data-appbuilder-object="container">
+                <img src="images/enlightenment-154910.svg" style="width: 100%; height: 40%;" alt="Title"
+                data-appbuilder-object="image" class="" title="">
+                <div class="text_item" data-appbuilder-object="text">Yoga is very healthy for you. You should try to do yoga every day.
+                    Try to focus on your breathing and with each movement breath
+                    in, and then breath out with the next movement. Try to breath
+                    down into your belly. Take it slow and never force your body.
+                    Let the energy flow through the top of your head to your feet
+                    grounded on the yoga mat. If you do yoga every day, you will
+                    be more flexible and live a long and fulfilling life.
+                    <br>
+                    <br>~ Namaste ~</div>
+            </div>
+        </div>
+        <div class="panel" title="Practice" id="page_11" data-appbuilder-object="page"
+        style="" data-header="header_0">
+            <ul class="list" data-appbuilder-object="list" style="z-index: 0;">
+                <li><a href="#page_1">Position 1</a>
+                </li>
+                <li><a href="#page_2">Position 2</a>
+                </li>
+                <li><a href="#page_3">Position 3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="panel" title="Resources" id="page_12" data-appbuilder-object="page"
+        style="" data-header="header_0">
+
+
+
+            <div class="container" style="width: 100%; height: 100%; position: relative; z-index: 0;"
+            data-appbuilder-object="container">
+
+                <a class="button" href="http://software.intel.com/en-us/html5/tools" style="background-image: url(http://localhost:58889/http-services/app-starter/web/files/images/mandala-18609_150.jpg); background-size: 50px; height: 50px; width: 100%; position: relative; z-index: 2; background-repeat: no-repeat no-repeat;"
+                data-appbuilder-object="button" data-transition="slide">About Intel XDK</a>
+                <a class="button" href="http://software.intel.com/en-us/html5/videos/make-a-quick-and-attractive-ui-for-your-app"
+                style="background-image: url(http://localhost:58889/http-services/app-starter/web/files/images/mandala-18609_150.jpg); background-size: 50px; height: 50px; width: 100%; position: relative; z-index: 2; background-repeat: no-repeat no-repeat;"
+                data-appbuilder-object="button" data-transition="slide" id="">App Starter Video</a>
+                <a class="button" href="http://software.intel.com/en-us/html5/articles/xdkdocs"
+                style="background-image: url(http://localhost:58889/http-services/app-starter/web/files/images/mandala-18609_150.jpg); background-size: 50px; height: 50px; width: 100%; position: relative; z-index: 2; background-repeat: no-repeat no-repeat;"
+                data-appbuilder-object="button" data-transition="slide" id="">Documentation</a>
+                <div class="grid" data-appbuilder-object="grid13" style="">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar"> <a href="#home" class="icon home">Home</a><a href="#page_10" class="icon info">About</a>
+        <a href="#page_11" class="icon star">Series</a><a href="#page_12" class="icon question">Resources</a>
+    </div>
+    <header id="header_0" data-appbuilder-object="header">
+        <h1 id="pageTitle" class="">Yoga App</h1>
+    </header>
+
+
+
+    <footer id="footer_1" data-appbuilder-object="footer"><a href="#page_10" class="icon left">Previous</a><a href="#home" class="icon home">Home</a>
+        <a href="#page_2" class="icon right">Next</a>
+    </footer>
+    <footer id="footer_2" data-appbuilder-object="footer"><a href="#page_1" class="icon left">Previous</a><a href="#home" class="icon home">Home</a>
+        <a href="#page_3" class="icon right">Next</a>
+    </footer>
+    <footer id="footer_3" data-appbuilder-object="footer"><a href="#page_2" class="icon left">Previous</a><a href="#home" class="icon home">Home</a>
+        <a href="#page_12" class="icon right">Next</a>
+    </footer>
+</div>
+
+</html>
