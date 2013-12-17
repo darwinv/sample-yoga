@@ -55,3 +55,15 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 IMAGES
 -----------------------------------------------------------------------------
+* source: http://pixabay.com/
+* source: http://pixabay.com/en/enlightenment-buddhist-monk-154910/
+* source: http://pixabay.com/en/yoga-exercise-position-stretch-37267/
+* source: http://pixabay.com/en/man-sport-yoga-person-gymnast-37264/
+* source: http://pixabay.com/en/man-figure-yoga-person-sports-37262/ 
+* source: http://pixabay.com/en/figure-sport-person-gymnast-37268/
+* license: http://creativecommons.org/publicdomain/zero/1.0/
+
+App Framework (formerly jQ.Mobi)
+-----------------------------------------------------------------------------
+* source:  https://github.com/01org/appframework
+* license: https://github.com/01org/appframework/blob/master/license.txt
