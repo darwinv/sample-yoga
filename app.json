@@ -10,7 +10,7 @@
 	"highlights":["App Starter", "App Framework"],
     	"keywords":["App Starter", "App Framework"],
 	"visible": "true",
-	"apppreview":"false",
+	"apppreview":"true",
 	"type":"appstarter",
 	"appname":"demo.yoga",
 	"relname":"4.0.0"
